@@ -3,5 +3,12 @@
   "routes": [
     { "src": "/api/expireListings", "dest": "api/expireListings.js" },
     { "src": "/api/(.*)", "dest": "api/server.js" }
-  ]
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "JWT_SECRET": "@jwt_secret",
+    "CLOUDINARY_NAME": "@cloudinary_name",
+    "CLOUDINARY_API_KEY": "@cloudinary_api_key",
+    "CLOUDINARY_API_SECRET": "@cloudinary_api_secret"
+  }
 }
