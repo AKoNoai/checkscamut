@@ -6,8 +6,5 @@
   "routes": [
     { "src": "/api/expireListings", "dest": "api/expireListings.js" },
     { "src": "/api/(.*)", "dest": "api/server.js" }
-  ],
-  "crons": [
-    { "path": "/api/expireListings", "schedule": "0 * * * *" }
   ]
 }
